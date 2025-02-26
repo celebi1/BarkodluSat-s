@@ -34,16 +34,16 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tBarkod = new System.Windows.Forms.TextBox();
+            this.tMiktar = new System.Windows.Forms.TextBox();
+            this.gridSatisListesi = new System.Windows.Forms.DataGridView();
             this.UrunAdi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fiyat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Miktar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Toplam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tGenelToplam = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.button27 = new System.Windows.Forms.Button();
@@ -106,23 +106,23 @@
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tOdenen = new System.Windows.Forms.TextBox();
+            this.tParaUstu = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chSatisİadeİslemi = new System.Windows.Forms.CheckBox();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Sil = new System.Windows.Forms.DataGridViewImageColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bKartNakit = new System.Windows.Forms.Button();
+            this.bKart = new System.Windows.Forms.Button();
+            this.bNakit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSatisListesi)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
@@ -165,7 +165,7 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.gridSatisListesi, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -181,11 +181,11 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.chSatisİadeİslemi);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tBarkod);
+            this.panel1.Controls.Add(this.tMiktar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(4, 4);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -217,31 +217,31 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "MİKTAR";
             // 
-            // textBox2
+            // tBarkod
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(192, 62);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(390, 26);
-            this.textBox2.TabIndex = 1;
+            this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tBarkod.Location = new System.Drawing.Point(192, 62);
+            this.tBarkod.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tBarkod.Name = "tBarkod";
+            this.tBarkod.Size = new System.Drawing.Size(390, 26);
+            this.tBarkod.TabIndex = 1;
             // 
-            // textBox1
+            // tMiktar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(36, 62);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tMiktar.Location = new System.Drawing.Point(36, 62);
+            this.tMiktar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tMiktar.Name = "tMiktar";
+            this.tMiktar.Size = new System.Drawing.Size(120, 26);
+            this.tMiktar.TabIndex = 0;
+            this.tMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // dataGridView1
+            // gridSatisListesi
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridSatisListesi.AllowUserToAddRows = false;
+            this.gridSatisListesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridSatisListesi.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gridSatisListesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -250,23 +250,23 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridSatisListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridSatisListesi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UrunAdi,
             this.Fiyat,
             this.Miktar,
             this.Toplam,
             this.Sil});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 126);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 540);
-            this.dataGridView1.TabIndex = 1;
+            this.gridSatisListesi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridSatisListesi.EnableHeadersVisualStyles = false;
+            this.gridSatisListesi.Location = new System.Drawing.Point(4, 126);
+            this.gridSatisListesi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridSatisListesi.Name = "gridSatisListesi";
+            this.gridSatisListesi.RowHeadersVisible = false;
+            this.gridSatisListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridSatisListesi.Size = new System.Drawing.Size(543, 540);
+            this.gridSatisListesi.TabIndex = 1;
             // 
             // UrunAdi
             // 
@@ -295,9 +295,9 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Controls.Add(this.button3, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.bKartNakit, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.bKart, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.bNakit, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 670);
@@ -313,7 +313,7 @@
             this.tableLayoutPanel3.BackColor = System.Drawing.Color.Tomato;
             this.tableLayoutPanel3.ColumnCount = 1;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.textBox3, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.tGenelToplam, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel10, 0, 1);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(330, 0);
@@ -325,20 +325,20 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(221, 136);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
-            // textBox3
+            // tGenelToplam
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Tomato;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(2, 1);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(217, 28);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "12332,2";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tGenelToplam.BackColor = System.Drawing.Color.Tomato;
+            this.tGenelToplam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tGenelToplam.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tGenelToplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tGenelToplam.ForeColor = System.Drawing.Color.White;
+            this.tGenelToplam.Location = new System.Drawing.Point(2, 1);
+            this.tGenelToplam.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.tGenelToplam.Name = "tGenelToplam";
+            this.tGenelToplam.Size = new System.Drawing.Size(217, 28);
+            this.tGenelToplam.TabIndex = 0;
+            this.tGenelToplam.Text = "12332,2";
+            this.tGenelToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer2
             // 
@@ -1383,7 +1383,7 @@
             this.tableLayoutPanel11.ColumnCount = 1;
             this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel11.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel11.Controls.Add(this.textBox5, 0, 1);
+            this.tableLayoutPanel11.Controls.Add(this.tOdenen, 0, 1);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel11.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel11.Margin = new System.Windows.Forms.Padding(0);
@@ -1400,7 +1400,7 @@
             this.tableLayoutPanel12.ColumnCount = 1;
             this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel12.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel12.Controls.Add(this.textBox6, 0, 1);
+            this.tableLayoutPanel12.Controls.Add(this.tParaUstu, 0, 1);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel12.Location = new System.Drawing.Point(110, 0);
             this.tableLayoutPanel12.Margin = new System.Windows.Forms.Padding(0);
@@ -1411,35 +1411,35 @@
             this.tableLayoutPanel12.Size = new System.Drawing.Size(111, 96);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
-            // textBox5
+            // tOdenen
             // 
-            this.textBox5.BackColor = System.Drawing.Color.DarkOrange;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(0, 50);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(110, 22);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tOdenen.BackColor = System.Drawing.Color.DarkOrange;
+            this.tOdenen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tOdenen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tOdenen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tOdenen.ForeColor = System.Drawing.Color.White;
+            this.tOdenen.Location = new System.Drawing.Point(0, 50);
+            this.tOdenen.Margin = new System.Windows.Forms.Padding(0);
+            this.tOdenen.Name = "tOdenen";
+            this.tOdenen.Size = new System.Drawing.Size(110, 22);
+            this.tOdenen.TabIndex = 0;
+            this.tOdenen.Text = "0";
+            this.tOdenen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // tParaUstu
             // 
-            this.textBox6.BackColor = System.Drawing.Color.DimGray;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox6.ForeColor = System.Drawing.Color.White;
-            this.textBox6.Location = new System.Drawing.Point(0, 50);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(111, 24);
-            this.textBox6.TabIndex = 1;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tParaUstu.BackColor = System.Drawing.Color.DimGray;
+            this.tParaUstu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tParaUstu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tParaUstu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tParaUstu.ForeColor = System.Drawing.Color.White;
+            this.tParaUstu.Location = new System.Drawing.Point(0, 50);
+            this.tParaUstu.Margin = new System.Windows.Forms.Padding(0);
+            this.tParaUstu.Name = "tParaUstu";
+            this.tParaUstu.Size = new System.Drawing.Size(111, 24);
+            this.tParaUstu.TabIndex = 1;
+            this.tParaUstu.Text = "0";
+            this.tParaUstu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -1465,21 +1465,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Para Üstü";
             // 
-            // checkBox1
+            // chSatisİadeİslemi
             // 
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Olive;
-            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightCoral;
-            this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(18, 8);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(138, 27);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Satış Yapılıyorr..";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.chSatisİadeİslemi.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chSatisİadeİslemi.AutoSize = true;
+            this.chSatisİadeİslemi.BackColor = System.Drawing.Color.Olive;
+            this.chSatisİadeİslemi.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.chSatisİadeİslemi.FlatAppearance.CheckedBackColor = System.Drawing.Color.LightCoral;
+            this.chSatisİadeİslemi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chSatisİadeİslemi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.chSatisİadeİslemi.Location = new System.Drawing.Point(18, 8);
+            this.chSatisİadeİslemi.Name = "chSatisİadeİslemi";
+            this.chSatisİadeİslemi.Size = new System.Drawing.Size(138, 27);
+            this.chSatisİadeİslemi.TabIndex = 4;
+            this.chSatisİadeİslemi.Text = "Satış Yapılıyorr..";
+            this.chSatisİadeİslemi.UseVisualStyleBackColor = false;
             // 
             // dataGridViewImageColumn1
             // 
@@ -1494,59 +1494,59 @@
             this.Sil.Image = global::BarkodluSatıs.Properties.Resources.remove1;
             this.Sil.Name = "Sil";
             // 
-            // button3
+            // bKartNakit
             // 
-            this.button3.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::BarkodluSatıs.Properties.Resources.kartnakit;
-            this.button3.Location = new System.Drawing.Point(222, 1);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 135);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "NAKİT KART \r\n(F3)\r\n";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = false;
+            this.bKartNakit.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.bKartNakit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKartNakit.FlatAppearance.BorderColor = System.Drawing.Color.MediumSeaGreen;
+            this.bKartNakit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKartNakit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKartNakit.ForeColor = System.Drawing.Color.White;
+            this.bKartNakit.Image = global::BarkodluSatıs.Properties.Resources.kartnakit;
+            this.bKartNakit.Location = new System.Drawing.Point(222, 1);
+            this.bKartNakit.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.bKartNakit.Name = "bKartNakit";
+            this.bKartNakit.Size = new System.Drawing.Size(106, 135);
+            this.bKartNakit.TabIndex = 2;
+            this.bKartNakit.Text = "NAKİT KART \r\n(F3)\r\n";
+            this.bKartNakit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bKartNakit.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // bKart
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::BarkodluSatıs.Properties.Resources.kredikarti;
-            this.button2.Location = new System.Drawing.Point(112, 1);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 135);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "KART\r\n(F2)\r\n";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.bKart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.bKart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bKart.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.bKart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKart.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bKart.ForeColor = System.Drawing.Color.White;
+            this.bKart.Image = global::BarkodluSatıs.Properties.Resources.kredikarti;
+            this.bKart.Location = new System.Drawing.Point(112, 1);
+            this.bKart.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.bKart.Name = "bKart";
+            this.bKart.Size = new System.Drawing.Size(106, 135);
+            this.bKart.TabIndex = 1;
+            this.bKart.Text = "KART\r\n(F2)\r\n";
+            this.bKart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bKart.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // bNakit
             // 
-            this.button1.BackColor = System.Drawing.Color.Tomato;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::BarkodluSatıs.Properties.Resources.tl_48;
-            this.button1.Location = new System.Drawing.Point(2, 1);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 135);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "NAKİT\r\n(F1)\r\n";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.bNakit.BackColor = System.Drawing.Color.Tomato;
+            this.bNakit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bNakit.FlatAppearance.BorderColor = System.Drawing.Color.Tomato;
+            this.bNakit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bNakit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bNakit.ForeColor = System.Drawing.Color.White;
+            this.bNakit.Image = global::BarkodluSatıs.Properties.Resources.tl_48;
+            this.bNakit.Location = new System.Drawing.Point(2, 1);
+            this.bNakit.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.bNakit.Name = "bNakit";
+            this.bNakit.Size = new System.Drawing.Size(106, 135);
+            this.bNakit.TabIndex = 0;
+            this.bNakit.Text = "NAKİT\r\n(F1)\r\n";
+            this.bNakit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bNakit.UseVisualStyleBackColor = false;
             // 
             // fSatis
             // 
@@ -1566,7 +1566,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSatisListesi)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
@@ -1595,15 +1595,15 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox tBarkod;
+        private System.Windows.Forms.TextBox tMiktar;
+        private System.Windows.Forms.DataGridView gridSatisListesi;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button bNakit;
+        private System.Windows.Forms.Button bKartNakit;
+        private System.Windows.Forms.Button bKart;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tGenelToplam;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.SplitContainer splitContainer2;
@@ -1674,11 +1674,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tParaUstu;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tOdenen;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chSatisİadeİslemi;
     }
 }
 
