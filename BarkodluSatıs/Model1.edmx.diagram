@@ -5,8 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="e326cdf8ff4748a69c5caaebd1fb4369" Name="Diagram1">
-        <EntityTypeShape EntityType="BarkodDbModel.Urun" Width="1.5" PointX="4" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BarkodDbModel.Urun" Width="1.5" PointX="1.625" PointY="0.625" IsExpanded="true" />
         <EntityTypeShape EntityType="BarkodDbModel.Terazi" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BarkodDbModel.HizliUrun" Width="1.5" PointX="6.25" PointY="1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
